@@ -1,0 +1,79 @@
+{
+"groups": {
+    "g1": [{
+        "hostname": "hu-bud-sw-mr-01-01",
+        "platform": "WS-C2960X-24PS-L",
+        "units": 4
+      }, {
+        "hostname": "hu-bud-sw-mr-01-02",
+        "platform": "WS-C2960X-48FPS-L",
+        "units": 4
+      }, {
+        "hostname": "hu-bud-sw-mr-01-03",
+        "platform": "WS-C2960X-48FPS-L",
+        "units": 2
+      }
+    ],
+    "g2": [{
+        "hostname": "hu-bud-sw-sr-01-01",
+        "platform": "WS-C2960X-48FPS-L",
+        "units": 4
+      }, {
+        "hostname": "hu-bud-sw-sr-01-02",
+        "platform": "WS-C2960X-48FPS-L",
+        "units": 4
+      }
+    ],
+    "g3": [{
+        "hostname": "hu-bud-sw-sr-02-01",
+        "platform": "WS-C2960X-48FPS-L",
+        "units": 4
+      }, {
+        "hostname": "hu-bud-sw-sr-02-02",
+        "platform": "WS-C2960X-48FPS-L",
+        "units": 2
+      }
+    ]    
+  },
+
+  "edges":
+  [{
+      "from": "hu-bud-sw-mr-01-01:XX4/0/25",
+      "to": "hu-bud-sw-sr-02-01:XX2/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX3/0/25",
+      "to": "hu-bud-sw-sr-02-01:XX1/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX3/0/26",
+      "to": "hu-bud-sw-sr-02-02:XX1/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX3/0/27",
+      "to": "hu-bud-sw-sr-02-02:XX2/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX2/0/28",
+      "to": "hu-bud-sw-sr-01-01:XX2/0/52"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX1/0/28",
+      "to": "hu-bud-sw-sr-01-01:XX1/0/52"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX1/0/26",
+      "to": "hu-bud-sw-sr-01-02:XX2/0/52"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX2/0/27",
+      "to": "hu-bud-sw-sr-01-02:XX1/0/52"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX2/0/25",
+      "to": "hu-bud-sw-mr-01-02:XX2/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX1/0/25",
+      "to": "hu-bud-sw-mr-01-02:XX1/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX2/0/26",
+      "to": "hu-bud-sw-mr-01-03:XX2/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX1/0/27",
+      "to": "hu-bud-sw-mr-01-03:XX1/0/49"
+    }
+    
+  ]
+}
