@@ -1,0 +1,24 @@
+{
+"groups": {
+    "g1": [{
+        "hostname": "hu-bud-sw-mr-01-01",
+        "platform": "WS-C2960X-24PS-L",
+        "units": 1
+      }, {
+        "hostname": "hu-bud-sw-mr-01-02",
+        "platform": "WS-C2960X-48FPS-L",
+        "units": 1
+      }
+    ]  
+  },
+ "edges":
+  [{
+      "from": "hu-bud-sw-mr-01-01:XX1/0/25",
+      "to": "hu-bud-sw-mr-01-02:XX1/0/49"
+    }, {
+      "from": "hu-bud-sw-mr-01-01:XX1/0/26",
+      "to": "hu-bud-sw-mr-01-02:XX1/0/50"
+    }  
+        
+  ]
+}
