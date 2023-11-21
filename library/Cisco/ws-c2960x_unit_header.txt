@@ -1,0 +1,4 @@
+ <tr>
+  <td colspan='10' ALIGN="left" color="white"><FONT COLOR="white">Cisco .:||:..:||:.</FONT></td>
+  <td colspan='25' ALIGN="right" color="white"><FONT color='red'>PLATFORM_V HOSTNAME_V</FONT></td>
+ </tr>
